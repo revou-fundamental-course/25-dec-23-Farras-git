@@ -32,7 +32,7 @@
             <div class="subhead">
                 <p align="center">Hai sobat, Selamat datang di Katik<br>Sebuah website yang membantu anda untuk menghitung luas dan keliling bangun datar segitiga</p>
             </div>
-    <!-- conluas start -->
+    <!-- contluas start -->
         <section id="containerluas">
           <h2 class="head-cont">Luas Segitiga</h2>
           <div class="imgluas">
@@ -49,18 +49,22 @@
             </div>
         <main class="input-wide-section">
             <label for="input-tinggi" id="label-tinggi">Tinggi</label>
-            <input type="number" id="input-tinggi" class="katik-input">
+            <input type="number" placeholder="0" id="input-tinggi" class="katik-input">
             <label for="input-alas" id="label-alas">Alas</label>
-            <input type="number" id="input-alas" class="katik-input">
+            <input type="number" placeholder="0" id="input-alas" class="katik-input">
             <div class="button">
-                <button onclick="hitungLuasSegitiga">hitung</button>
-                <button>reset</button>
+                <button onclick="hitungLuas()">hitung</button>
+                <button onclick="resetFormluas()">reset</button>
+            </div>
+            <div class="form-hasil">
+              <div id="output">Berikut adalah Hasil dari Luas Segitiga:</div>
+                  <p id="hasilluas">0</p>
             </div>
         </main>
         </section>
-    <!-- conluas end -->
+    <!-- contluas end -->
         <br>
-    <!-- conkel start -->
+    <!-- contkel start -->
     <div>
         <section id="containerkeliling">
             <h2 class="head-cont2">Keliling Segitiga</h2>
@@ -77,29 +81,39 @@
                        S3 = Sisi CA<br>
                   </div>
               </div>
-          <main class="input-wide-section">
-              <label for="input-tinggi" id="label-tinggi">Tinggi</label>
-              <input type="number" id="input-tinggi" class="katik-input">
-              <label for="input-alas" id="label-alas">Alas</label>
-              <input type="number" id="input-alas" class="katik-input">
+          <main class="input-perimeter-section">
+              <label for="sisi1">Sisi 1</label>
+              <input type="number" placeholder="0" id="sisi1" class="katik-input">
+              <label for="sisi2">Sisi 2</label>
+              <input type="number" placeholder="0" id="sisi2" class="katik-input">
+              <label for="sisi3">Sisi 3</label>
+              <input type="number" placeholder="0" id="sisi3" class="katik-input">
               <div class="button">
-                  <button onclick="hitungLuasSegitiga">hitung</button>
-                  <button>reset</button>
-              </div>
+                <button onclick="hitungKeliling()">hitung</button>
+                <button onclick="resetFormkeliling()">reset</button>
+            </div>
+            <div class="form-hasil">
+              <div id="output">Berikut adalah Hasil dari Keliling Segitiga:</div>
+                  <p id="hasilkeliling">0</p>
+            </div>
           </main>
-          </section>
+        </section>
     </div>
-    <!-- conkel end -->
+    <!-- contkel end -->
     </article>
     <!-- article end -->
 
     <!-- footer start -->
-
+    <footer>
+      <div class="footer">
+        <p>&copy; 2024 Revou demo. All Rights Reserved.</p>
+    </div>
+    </footer>
 
 
     <!-- footer end -->
 
     <!-- script js -->
-    <script src="js/script.js">hitungLuasSegitiga</script>
+    <script src="js/script.js">hitungLuas</script>
 </body>
 </html>
