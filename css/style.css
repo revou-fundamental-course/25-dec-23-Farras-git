@@ -101,6 +101,7 @@
 .heading1 {
     display: flex;
     justify-content: center;
+    margin-top: 10px;
 }
 
 .subhead {
@@ -201,6 +202,7 @@ button {
     border: none;
     cursor: pointer;
     text-transform: capitalize;
+    border: 1.5px solid #c72dab;
 }
 
 button:hover {
@@ -252,17 +254,26 @@ button:active {
     margin-top: 10px;
 }
 
-@media screen and (max-width: 476px) {
+@media screen and (max-width: 300px) {
     .wrapper {
-        width: 100%;
+        width: 200%;
     }
     .fContainer {
-        width: 100%;
+        width: 200%;
+    }
+    .heading1 {
+        width: 200%;
+    }
+    .subhead {
+        width: 190%;
     }
     .navigation>li>img {
-        width: 100%;
+        width: 130%;
     }
     #containerluas {
-        width: 100%;
+        width: 190%;
+    }
+    #containerkeliling {
+        width: 190%;
     }
 }
